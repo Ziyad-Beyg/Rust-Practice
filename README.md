@@ -1,0 +1,3 @@
+# Rust-Practice
+
+IT IS ALL MY PRACTICE AND ASSIGNMENTS
