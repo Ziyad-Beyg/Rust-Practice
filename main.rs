@@ -1,298 +1,261 @@
-                                                            // ASSIGNMENT 2
-
-                                                            // Q1
 // fn main(){
-//     let x = String::from("HELLO");
-//     let y = x;
-//     println!("{}",x);
+//     println!("Hi there, my name is 'MIRZA ZIYAD AHMED BAIG'");
 // }
 
-                                                            // Q2
 // fn main(){
-//     let mut s = String::from("PAKISTAN");
-//     println!("{}",s);
-//     mutable_reference_of_s(&mut s);
-//     println!("{}",s);
-// }
-// fn mutable_reference_of_s(s:&mut String){
-//      s.push_str(" ZINDABAD");
+//     let mut age = 5_u8;
+//     age = age + 15;
+//     println!("MY AGE IS {}",age);
 // }
 
-                                                            // Q3
-// use std::io;
 // fn main(){
-//     let mut num1 = String::new();
-//     let mut num2 = String::new();
-//     let mut num3 = String::new();
-//     io::stdin().read_line(&mut num1).expect("FAILED TO READ USER INPUT");
-//     io::stdin().read_line(&mut num2).expect("FAILED TO READ USER INPUT");
-//     io::stdin().read_line(&mut num3).expect("FAILED TO READ USER INPUT");
-//     let number1:u32 = num1.trim().parse().expect("ENTER A DIGIT");
-//     let number2:u32 = num2.trim().parse().expect("ENTER A DIGIT");
-//     let number3:u32 = num3.trim().parse().expect("ENTER A DIGIT");
-//     let average = (number1 + number2 + number3)/3;
-//     println!("The average of '{}', '{}', '{}' is {}",number1, number2, number3, average);
+//     const PI:f32 = 3.142;
+//     println!("IN MATHEMATICS THE VALUE OF PI IS {}", PI);
 // }
 
-                                                            // Q4
-// use std::io;
 // fn main(){
-//     let mut input = String::new();
-//     io::stdin().read_line(&mut input).expect("FAILED TO READ USER INPUT");
-//     let mod_input = input.trim();
-//     println!("Length of '{}' is {}", mod_input, length_calculator(&input));
-// }
-// fn length_calculator(x: &String)->usize{
-//     x.len()
+//     let blank_spaces = "     ";
+//     let length = blank_spaces.len();
+//     println!("length of string {}",length);
 // }
 
-                                                            // Q5
-// use std::io;
 // fn main(){
-//     let mut input = String::new();
-//     io::stdin().read_line(&mut input).expect("FAILED TO READ USER INPUT");
-//     let input_number:u32 = input.trim().parse().expect("ENTER A VALID DIGIT");
-//     let mut x = 0;
-//     while x <= input_number{
-//         let mut y = 1;
-//         while y <= x {
-//             print!("*");
-//             y = y + 1;
-//         }
-//         println!("");
-//         x = x + 1;
+//     let integer:u8 = 5;
+//     let float:f32 = 3.142;
+//     let character:char = 'z';
+//     let boolean:bool = true;
+//     println!("I HAVE {} RUPEES",integer);
+//     println!("PI VALUE IS {}",float);
+//     println!("MY NAME STARTS WITH {}",character);
+//     println!("I ALWAYS SPEAKS {}",boolean);
+// }
+
+// fn main(){
+//     let tuple = (5, -6, 7.12, 'z');
+//     println!("{}",tuple.0);
+//     println!("{}",tuple.1);
+//     println!("{}",tuple.2);
+//     println!("{}",tuple.3);
+//     let tuple:(char, f64, i32, u8) = ('z', 7.12, -6, 5);
+//     println!("{}",tuple.0);
+//     println!("{}",tuple.1);
+//     println!("{}",tuple.2);
+//     println!("{}",tuple.3);
+// }
+
+// fn main(){
+//     let array = [1, 2, 3, 4, 5, 6];
+//     println!("{}",array[0]);
+//     println!("{}",array[1]);
+//     println!("{}",array[2]);
+//     println!("{}",array[3]);
+//     println!("{}",array[4]);
+//     println!("{}",array[5]);
+// }
+
+//                                      ASSIGNMENT 1
+
+// Q1
+// fn main(){
+//     let pk ="PAKSITAN ZINDABAD";
+//     println!("{} \nLENGTH OF {} IS {}",pk ,pk,pk.len());
+// }
+
+// Q2
+// fn main(){
+//     let unsigned_int:u64 = 85;
+//     let signed_int:i16 = -550;
+//     println!(" {}\n{}",unsigned_int, signed_int); 
+// }
+
+// Q3
+// fn main(){
+//     let f_variable:f32 = 56.6;
+//     println!("{}",f_variable); 
+// }
+
+// Q4
+// fn main(){
+//     let a = 76;
+//     let b = 23;
+
+//     let addition = a + b;
+//     let subtraction = a - b;
+//     let division = a / b;
+//     let multiplication = a * b;
+//     let modulus = a % b;
+
+// //  OUTPUT
+
+//     println!("a + b = {}\na - b = {}\na / b = {}\na * b = {}\na % b = {}",addition,subtraction, division, multiplication,modulus);
+// }
+
+// Q5
+// fn main(){
+//     let arr = [100, 150, 200, 250, 300];
+//     println!("{:?}\n{}\n{}", arr, arr[1], arr[3]);
+// }
+
+// Q6
+// fn main(){
+//     let tup = ("IOT", "AI", "CLOUD", 500.65, 8645, 65.4);
+//     println!("{:?}\n{}\n{}\n{}", tup, tup.2, tup.4, tup.5);
+// }
+
+// Q7
+// fn main(){
+//     sum(10,20,30);
+// }
+
+// fn sum(x:u8, y:u8, z:u8){
+//     println!("{}", x + y + z);
+// }
+
+// Q8
+// fn main(){
+//     let multiplication = multiply(5.6, 2.4, 10.2);
+//     println!("{}", multiplication);
+// }
+
+// fn multiply(x:f32, y:f32, z:f32)->f32{
+//     let multiply = x * y * z;
+//     multiply
+// }
+
+// Q9
+// fn main(){
+//     let marks =62;
+//     if marks >= 80{
+//         println!("GRADE A+");
+//     }
+//     else if marks >= 70 && marks < 80{
+//         println!("GRADE A");
+//     }
+//     else if marks >= 60 && marks < 70{
+//         println!("GRADE B");
+//     }
+//     else if marks >= 50 && marks < 60{
+//         println!("GRADE C");
+//     }
+//     else if marks >= 40 && marks <50{
+//         println!("GRADE D");
+//     }
+//     else if marks < 40{
+//         println!("GRADE F");
 //     }
 // }
 
-                                                            // Q6
-// #[derive(Debug)]
-// struct Student{
-//     name: String,
-//     email: String,
-//     phone_number: u64,
-//     gender: String,
-// }
-// fn main(){
-//     let student1 = Student{
-//         name:String::from("ALI ASLAM"),
-//         email:String::from("aliaslam@gmail.com"),
-//         phone_number:12345678910,
-//         gender:String::from("Male")
-//     };
-//     let student2 = Student{
-//         name:String::from("AYESHA ASLAM"),
-//         email:String::from("atesahaslam@gmail.com"),
-//         phone_number:10987654321,
-//         gender:String::from("Female")
-//     };
-//     println!("{:#?}", student1.email);
-//     println!("{:#?}", student2);
-// }
+// //                      ALTERNATE METHOD
 
-                                                            // Q7
-// #[derive(Debug)]
-// struct Rectangle{
-//     width:u32,
-//     height:u32
-// }
 // fn main(){
-//     let mut rect1 = Rectangle{
-//         width:50,
-//         height:100,
-//     };
-//     println!("{:#?}",rect1);
-//     rect1.width = 150;
-//     println!("Update width of rectangle is {}",rect1.width);
-// }
-
-                                                            // Q8
-// #[derive(Debug)]
-// struct Rectangle{
-//     width:u32,
-//     height:u32
-// }
-// fn main(){
-//     let rect_1 = Rectangle{
-//         width:50,
-//         height:100
-//     };
-//     println!("{}", another_function(rect_1));
-// }
-// fn another_function(x:Rectangle)->u32{
-//     x.width + x.height
-// }
-
-                                                            // Q9
-// #[derive(Debug)]
-// struct Triangle{
-//     length1 : u32,
-//     length2 : u32,
-//     length3 : u32,
-// }
-// impl Triangle{
-//     fn sum(&self)->u32{
-//         self.length1 + self.length2 + self.length3 
+//     let marks =62;
+//     let result = if marks >= 80 && marks <100{
+//         "GRADE A+"
 //     }
-//     fn greatest(&self)->u32{
-//        let result = if self.length1 > self.length2 && self.length1 > self.length3{
-//             self.length1
+//     else if marks >= 70 && marks < 80{
+//         "GRADE A"
+//     }
+//     else if marks >= 60 && marks < 70{
+//         "GRADE B"
+//     }
+//     else if marks >= 50 && marks < 60{
+//         "GRADE C"
+//     }
+//     else if marks >= 40 && marks <50{
+//         "GRADE D"
+//     }
+//     else {
+//         "GRADE F"
+//     };
+
+//     println!("{}",result);
+// }
+
+// Q10
+// fn main(){
+//     let year = 2013;
+//     if year % 4 == 0{
+//         println!("{} is a leap year!!", year);
+//     }
+//     else{
+//         println!("{} is not a leap year!!", year);
+//     }
+// }
+
+// practice
+// fn main(){
+//     let mut counter = 0;
+//     let result = loop{
+//         counter += 1;
+//         println!("{}", counter);
+//         if counter == 15{
+//             break counter * 3
 //         }
-//         else if self.length2 > self.length1 && self.length2 > self.length3{
-//             self.length2
+//     };
+//     println!("RETURN VALUE IS {}", result);
+// }
+
+// Q11
+// fn main(){
+//     for i in 0..100{
+//         if i % 2 == 0{
+//             println!("{}",i);
+//         }
+//     }
+// }
+
+// Q12
+// fn main(){
+//     let mut counter = 0;
+//     while counter < 100{
+//         if counter % 2 != 0{
+//             println!("{}",counter);
+//         }
+//         counter += 1;
+//     }
+// }
+
+// Q13
+// fn main(){
+//     let number = 4;
+//     let mut counter = 0;
+//     while counter < 10{
+//         counter += 1;
+//         println!("{} * {} = {}",number, counter, number * counter);
+//     }
+// }
+
+//              practice
+// fn main(){
+//     for i in 0..=10{
+//         if i % 2 == 0{
+//             println!("{} is an even number!!!", i);
 //         }
 //         else{
-//             self.length3
-//         };
-//         result
+//             println!("{} is an odd number", i);
+//         }
 //     }
 // }
+
+//              practice
 // fn main(){
-//     let t1 = Triangle{
-//         length1 : 25,
-//         length2 : 80,
-//         length3 : 60
-//     };
-//     println!("The sum of all three sides of a Triangle is: {}", t1.sum());
-//     println!("The greatest side from all three sides of a Triangle is: {}",t1.greatest());
+//     println!("NOT true is {}","!true");
 // }
 
-                                                            // Q10
-// #[derive(Debug)]
-// struct PERSON{
-//     name : String,
-//     age : u32,
-//     country : String,
-// }
-// use std::io;
+// Q14
 // fn main(){
-// //  USER INPUT
-//     let mut name = String::new();
-//     println!("Please Enter Your Name: ");
-//     io::stdin().read_line(&mut name).expect("Invalid Input");
-//     let mut age = String::new();
-//     println!("Please Enter Your Age: ");
-//     io::stdin().read_line(&mut age).expect("Invalid Input");
-//     let mut country = String::new();
-//     println!("Please Enter Your Country Name: ");
-//     io::stdin().read_line(&mut country).expect("Invalid Input");
-// //  STRUCT INSTANCE
-//     let person1 = PERSON{
-//         name: name.trim().to_string(),
-//         age : age.trim().parse().expect("Can not convert string into integer!!!"),
-//         country : country.trim().to_string()
-//     };
-// //  ARRAY CREATION 
-//     let arr1 = [&person1.name.to_uppercase(), &person1.age.to_string(), &person1.country.to_uppercase()];
-//     println!("User Input Is: {:#?}",arr1);
+//     let x = 95;
+//     let n = 150;
+//     let p = 100 * x / n ;
+//     println!("Percentage of Student is {}%", p);
 // }
 
-                                                            // PRACTICE
-// #[derive(Debug)]
-// struct car_info{
-//     company:String,
-//     name:String,
-//     car_type:String,
-//     fuel_type:String,
-//     price:u64,
-// }
-
-// use std::io;
+// Q15
 // fn main(){
-
-//     let car1 = car_info{
-//         company:String::from("Honda") ,
-//         name:String::from("Civic") ,
-//         car_type:String::from("Manual") ,
-//         fuel_type:String::from("Petrol") ,
-//         price:2000000 ,
-//     };
-//     let car2 = car_info{
-//         company:String::from("Honda") ,
-//         name:String::from("Civic") ,
-//         car_type:String::from("Automatic") ,
-//         fuel_type:String::from("CNG") ,
-//         price:2200000 ,
-//     };
-//     let car3 = car_info{
-//         company:String::from("Honda") ,
-//         name:String::from("City") ,
-//         car_type:String::from("Manual") ,
-//         fuel_type:String::from("CNG") ,
-//         price:1900000 ,
-//     };
-//     let car4 = car_info{
-//         company:String::from("Honda") ,
-//         name:String::from("City") ,
-//         car_type:String::from("Automatic") ,
-//         fuel_type:String::from("Petrol") ,
-//         price:2300000 ,
-//     };
-//     let car5 = car_info{
-//         company:String::from("Toyota") ,
-//         name:String::from("Corolla") ,
-//         car_type:String::from("Manual") ,
-//         fuel_type:String::from("Petrol") ,
-//         price:2000000 ,
-//     };
-//     let car6 = car_info{
-//         company:String::from("Toyota") ,
-//         name:String::from("Corolla") ,
-//         car_type:String::from("Automatic") ,
-//         fuel_type:String::from("CNG") ,
-//         price:2200000 ,
-//     };
-//     let car7 = car_info{
-//         company:String::from("Toyota") ,
-//         name:String::from("Camry") ,
-//         car_type:String::from("Manual") ,
-//         fuel_type:String::from("CNG") ,
-//         price:1900000 ,
-//     };
-//     let car8 = car_info{
-//         company:String::from("Toyota") ,
-//         name:String::from("Camry") ,
-//         car_type:String::from("Automatic") ,
-//         fuel_type:String::from("Petrol") ,
-//         price:2300000 ,
-//     };
-
-//     println!("ASSALAM O ALAIKUM,\n Wellcome to my shop, it is famous for it's selling and purchasing systems.\n\nWhat is your name?\n");
-//     let mut user_name = String::new();
-//     io::stdin().read_line(&mut user_name).expect("Enter correct name");
-//     let mut user_1 = String::new();
-//     println!(" {}, CHOOSE YOUR OPERATION \nA. Sell\nB. Purchase \n", user_name.to_uppercase());
-//     io::stdin().read_line(&mut user_1).expect("WRONG ENTRY");
-
-
-//     let mut user_struct = car_info{
-//         company : String::new(),
-//         name: String::new(),
-//         car_type : String::new(),
-//         fuel_type : String::new(),
-//         price: 0,
-//     };
-    
-
-//         if user_1.trim() == "a" || user_1 == "A" || user_1 == "sell" || user_1 == "Sell" || user_1 == "SELL"{
-//             println!("\n\n{}, you are here to sell your car. We are so lucky to have a customer like you!!!", user_name.to_uppercase());
-        
-//             println!(" which car do you want to sell?\n ");
-//             io::stdin().read_line(&mut user_struct.name).expect("WRONG ENTRY");
-        
-//             println!(" what is the transmition type of car?\n ");
-//             io::stdin().read_line(&mut user_struct.car_type).expect("WRONG ENTRY");
-        
-//             println!(" what is the fuel type of your car? \n");
-//             io::stdin().read_line(&mut user_struct.fuel_type).expect("WRONG ENTRY");
-        
-//             println!(" How much price are you asking for your car? \n");
-//             let mut car_price =String::new();
-//             io::stdin().read_line(&mut car_price).expect("WRONG ENTRY");
-//             let new_var:u64 = car_price.trim().parse().expect("WRONG ENTRY");
-//             user_struct.price = new_var;
-//         }
-//         else{
-//             println!("!!!!!!!!!!!!!!!!!!!!");
-            
-//         }
+//     let days =1329;
+//     let one_year = 365;
+//     let one_week = 7;
+//     let yr = days / one_year;
+//     let wk = days / one_week;
+//     println!("Total Number of Days: {}\nYears: {} \nWeeks: {}", days, yr, wk);
 // }
